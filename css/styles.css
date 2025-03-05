@@ -1,11 +1,18 @@
 /*
-Author: Maria Cruz
+Author: Sydney Slaton
 Date: Current Date
 File Name: styles.css
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, img, h1, h3 {
+body,
+header,
+nav,
+main,
+footer,
+img,
+h1,
+h3 ul {
     margin: 0;
     padding: 0;
     border: 0;
@@ -21,6 +28,41 @@ img {
     display: block;
 }
 
+/*Style rules for mobile viewport*/
+
+/*Style rules to show mobile class and hide tab-desk class*/
+.mobile {
+    display: block;
+
+    h1 {
+        .emblema-one-regular {
+            font-family: "Emblema One", system-ui;
+            font-weight: 400;
+            font-style: normal;
+        }
+    }
+
+    h3 {
+        .lora {
+            font-family: "Lora", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+    }
+}
+
+.tab-desk {
+    display: none;
+}
+
+/*Style rules for header area*/
+h1,
+h3 {
+    padding: 2%;
+    text-align: center;
+}
+
 /* Style rules for navigation area */
 nav {
     background-color: #2a1f14;
@@ -28,12 +70,12 @@ nav {
 
 nav ul {
     list-style-type: none;
-    margin: 0;
     text-align: center;
 }
 
 nav li {
-    display: inline-block;
+    display: block;
+    border-top: 0.5px, solid, #f6eee4;
     font-size: 1.5em;
     font-family: Geneva, Arial, sans-serif;
     font-weight: bold;
@@ -77,8 +119,32 @@ main ul {
     text-align: center;
 }
 
+.round {
+    border-radius: 6px
+}
+
 #contact {
     text-align: center;
+}
+
+.tel-link {
+    background-color: #2a1f14;
+    padding: 2%;
+    width: 80%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+tel-link a {
+    background-color: #f6eee4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#info ul {
+    margin-left: 10%;
 }
 
 /* Style rules for footer content */
